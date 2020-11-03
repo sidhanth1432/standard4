@@ -158,6 +158,31 @@ const CART = {
             showCart();
         });
         
+
+
+
+        function checkoutform(){
+        let checkoutSection = document.getElementById('checkout');
+            checkout.innerHTML = '';
+                    document.getElementById("myTextarea").disabled = true;
+                    
+                        let sum=0
+                        let message=""
+            let s = CART.sort('qty');
+            s.forEach( item =>{
+                        sum+=item.qty * item.itemPrice;
+ 
+                        
+        message=message.concat(item.title);
+        message=message.concat("-");
+        message=message.concat(item.qty);
+        message=message.concat("????");                
+            })
+                    let cost = new Intl.NumberFormat('en-CA',{style: 'currency', currency:'CAD'}).format(sum);
+                    message=message.concat(cost);
+                    document.getElementById("myTextarea").placeholder = message;
+        
+        }
         function showCart(){
             let cartSection = document.getElementById('cart');
             cart.innerHTML = '';
@@ -169,6 +194,7 @@ const CART = {
                 
                 
                 sum+=item.qty * item.itemPrice;
+                        
                 
                 
                                 
