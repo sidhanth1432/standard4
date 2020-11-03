@@ -6,12 +6,14 @@
     <meta name="description" content="contact form example">
 
 </head>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <body bgcolor=white>
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+<main>
+    
     <h2 class="content-head is-center">Contact Us!</h2>
     <aside>
         <p>
@@ -28,11 +30,22 @@
             <br><br>
             <font size="3">Email Id:</font><br>
             <input type="text" placeholder="id@domain.com" size="50" maxlength="200" name="email" required>
-            <br><br>
-            <font size="3">Message: </font><br>
-            <textarea cols="50" rows="10" placeholder="Message" name="message"></textarea><br><br>
+            <br>
+            <br>
+             <font size="3">FINALISED ORDER: </font><br>
+            <section id="checkout">
+             
+           
+            <textarea cols="50" rows="10" placeholder="Message" name="message"></textarea>
+                
+                </section>
+ 
+                
+                <br><br>
             <button class="button-success pure-button button-xlarge">
-                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+                
+                
+                                <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
         </div>
         <div class="thankyou_message" style="display:none;">
             <h3><em>Thanks</em> for contacting us!</h3>
@@ -40,6 +53,9 @@
                 We will get back to you soon!</h3>
         </div>
     </form>
+       
+    </main>
+    <script data-cfasync="false" src="data.js"></script>
     <script data-cfasync="false" src="form-submission-handler.js"></script>
 </body>
 
