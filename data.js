@@ -179,7 +179,7 @@ const CART = {
                     let cost = new Intl.NumberFormat('en-CA',{style: 'currency', currency:'CAD'}).format(sum);
                     message=message.concat(cost);
                     console.log(message);
-                    document.getElementById("myTextarea").placeholder = message;
+                    document.getElementById('textarea').placeholder = message;
         
         }
         function showCart(){
