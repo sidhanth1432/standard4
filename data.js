@@ -162,9 +162,7 @@ const CART = {
 
 
         function checkoutform(){
-        let checkoutSection = document.getElementById('checkout');
-            checkout.innerHTML = '';
-                    document.getElementById("myTextarea").disabled = true;
+        
                     
                         let sum=0
                         let message=""
