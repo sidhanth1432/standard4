@@ -204,7 +204,7 @@
                         var1=""
             let s = CART.sort('qty');
             s.forEach( item =>{
-                        sum+=item.qty * item.itemPrice;
+                        sum=sum+((item.qty) * (item.itemPrice));
  
                         
         message=message.concat(item.title);
