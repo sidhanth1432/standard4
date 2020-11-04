@@ -183,6 +183,7 @@ const CART = {
                     loginForm.elements.message.placeholder = message;
                     
                     
+                    
         
         }
         function showCart(){
