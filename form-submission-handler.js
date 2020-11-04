@@ -152,8 +152,7 @@
 }];
         
          function checkoutform(){
-        
-                    
+                    CART.init();
                         let sum=0
                         let message=" "
                         let qty=" "
