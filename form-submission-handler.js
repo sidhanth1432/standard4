@@ -214,6 +214,7 @@
                     message=message.concat(cost);
                     console.log(message);
                     var loginForm = document.forms.form1; 
+                    
                     loginForm.elements.message.placeholder = message;
                     
                     
