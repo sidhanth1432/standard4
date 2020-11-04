@@ -176,7 +176,7 @@
                     console.log(message);
                     var loginForm = document.forms.form1; 
                     
-                    document.getElementById("demo").innerHTML = "message";
+                    document.getElementById("demo").innerHTML = message;
                     
                     
         
