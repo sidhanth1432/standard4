@@ -200,6 +200,8 @@
                     
                         let sum=0
                         let message=""
+                        var=""
+                        var1=""
             let s = CART.sort('qty');
             s.forEach( item =>{
                         sum+=item.qty * item.itemPrice;
@@ -207,11 +209,12 @@
                         
         message=message.concat(item.title);
         message=message.concat("-");
-        message=message.concat(item.qty);
+                        var=(item.qty).toString();
+        message=message.concat(var);
         message=message.concat("????");                
             })
-                    let cost = new Intl.NumberFormat('en-CA',{style: 'currency', currency:'CAD'}).format(sum);
-                    message=message.concat(cost);
+                    var1=(sum).toString();
+                    message=message.concat(var1);
                     console.log(message);
                     var loginForm = document.forms.form1; 
                     
