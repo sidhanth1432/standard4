@@ -1,43 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (function() {
             
             const CART = {
@@ -191,11 +151,7 @@
     "price":23.45
 }];
         
-        
-
-
-
-        function checkoutform(){
+         function checkoutform(){
         
                     
                         let sum=0
@@ -205,16 +161,19 @@
             let s = CART.sort('qty');
             s.forEach( item =>{
                         sum=sum + ((item.qty) * (item.itemPrice));
- 
+ console.log(sum);
                         
         message=message.concat(item.title);
-        message=message.concat("-");
+        console.log(item.title);
+                        message=message.concat("-");
                         qty=(item.qty).toString();
-        message=message.concat(qty);
+        console.log(qty);
+                        message=message.concat(qty);
         message=message.concat("????");                
             })
                     var1=(sum).toString();
-                    message=message.concat(var1);
+                    console.log(var1);
+                     message=message.concat(var1);
                     console.log(message);
                     var loginForm = document.forms.form1; 
                     
@@ -235,17 +194,6 @@
                 
                 sum+=item.qty * item.itemPrice;
                         
-                
-                
-                                
-                               
-                
-                
-                
-                
-                
-                
-                
                 
                 let title = document.createElement('h3');
                 title.textContent = item.title;
@@ -279,31 +227,15 @@
                 let cost1 = new Intl.NumberFormat('en-CA',{style: 'currency', currency:'CAD'}).format(item.qty * item.itemPrice);
                 price.textContent = cost1;
                 cartitem.appendChild(price);
-                
-                
-                
-                
-                
-                
-                
-                
                 cartSection.appendChild(cartitem);
-                
-                
-                
-                
-            })
+                })
             
             
                 let total= document.createElement('h3');
                 let cost = new Intl.NumberFormat('en-CA',{style: 'currency', currency:'CAD'}).format(sum);
                 total.textContent = 'TOTAL AMOUNT IS'.concat(cost);
                 total.className = 'title'
-            cartSection.appendChild(total);
-            
-            
-            
-            
+            cartSection.appendChild(total); 
         }
         
         function incrementCart(ev){
@@ -385,196 +317,7 @@
             CART.add(id, 1);
             showCart();
         }
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-    // get all data in form and return object
+   // get all data in form and return object
     function getFormData(form) {
         var elements = form.elements;
         var honeypot;
