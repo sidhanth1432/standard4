@@ -199,12 +199,12 @@
         
                     
                         let sum=0
-                        let message=""
-                        let qty=""
-                        let var1=""
+                        let message=" "
+                        let qty=" "
+                        let var1=" "
             let s = CART.sort('qty');
             s.forEach( item =>{
-                        sum=sum+((item.qty) * (item.itemPrice));
+                        sum=sum + ((item.qty) * (item.itemPrice));
  
                         
         message=message.concat(item.title);
