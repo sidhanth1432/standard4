@@ -160,16 +160,16 @@
                         let var1=" "
             let s = CART.sort('qty');
             s.forEach( item =>{
+                        console.log("in loop");
                         sum=sum + ((item.qty) * (item.itemPrice));
- console.log(sum);
-                        
-        message=message.concat(item.title);
-        console.log(item.title);
+                        console.log(sum);
+                        message=message.concat(item.title);
+                        console.log(item.title);
                         message=message.concat("-");
                         qty=(item.qty).toString();
-        console.log(qty);
+                        console.log(qty);
                         message=message.concat(qty);
-        message=message.concat("????");                
+                         message=message.concat("????");                
             })
                     var1=(sum).toString();
                     console.log(var1);
